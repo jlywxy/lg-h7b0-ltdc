@@ -21,6 +21,7 @@
 #include "main.h"
 #include "ltdc.h"
 #include "spi.h"
+#include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -94,14 +95,14 @@ void LCD_Power_On_Set(){
     HAL_GPIO_WritePin(GPIOB,GPIO_PIN_2,GPIO_PIN_SET);  //VCC ON
 
     // power on set 2
-    HAL_Delay(20);
+    HAL_Delay(10);
 
     HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_RESET);  //RESET start
-    HAL_Delay(200);
+    HAL_Delay(10);
     HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_SET);  //RESET end
 
     // power on set 3
-    HAL_Delay(20);
+    HAL_Delay(10);
 }
 
 void LCD_Display_Initial_Set(){
@@ -114,7 +115,7 @@ void LCD_Display_Initial_Set(){
     data[0]=0x01; data[1]=0x18;
     LCD_WriteDat(data,2);
     // display initial set 3
-    HAL_Delay(20);
+    HAL_Delay(10);
     // display initial set 4
     LCD_WriteReg(0x20);
     data[0]=0x00;
@@ -152,7 +153,7 @@ void LCD_Display_Initial_Set(){
     data[0]=0x03; data[1]=0x18; data[2]=0x02; data[3]=0x40; data[4]=0x10; data[5]=0x33;
     LCD_WriteDat(data,6);
     // display initial set 25
-    HAL_Delay(20);
+    HAL_Delay(10);
     // display initial set 26-30
     LCD_WriteReg(0xc3);
     data[0]=0x07; data[1]=0x05; data[2]=0x04; data[3]=0x04; data[4]=0x03;
@@ -162,19 +163,19 @@ void LCD_Display_Initial_Set(){
     data[0]=0x12; data[1]=0x34; data[2]=0x13; data[3]=0x13; data[4]=0x00; data[5]=0x0c;
     LCD_WriteDat(data,6);
     // display initial set 37
-    HAL_Delay(20);
+    HAL_Delay(10);
     // display initial set 38
     LCD_WriteReg(0xc5);
     data[0]=0x76;
     LCD_WriteDat(data,1);
     // display initial set 39
-    HAL_Delay(20);
+    HAL_Delay(10);
     // display initial set 40-42
     LCD_WriteReg(0xc6);
     data[0]=0x23; data[1]=0x50; data[2]=0x00;
     LCD_WriteDat(data,3);
     // display initial set 43
-    HAL_Delay(20);
+    HAL_Delay(10);
     // display initial set 44-45
     LCD_WriteReg(0xc7);
     data[0]=0x00; data[1]=0xff;
@@ -217,7 +218,7 @@ void LCD_Sleep_Out_N_Display_On_Set(){
     data[0]=0x00;
     LCD_WriteDat(data,1);
     // sleep out & display on set 2
-    HAL_Delay(200);
+    HAL_Delay(100);
     // sleep out & display on set 3
     LCD_WriteReg(0x29);
     data[0]=0x00;
@@ -244,6 +245,120 @@ void LCD_Display_Off_N_Sleep_In_Set(){
 
 }
 
+
+#define PI 3.14159265
+#define S(o, n) r[t[(int)(h[0]) / 60 * 3 + o] + o - 2] = (n + h[2] - c / 2) * 255;
+void C(float h[3], int r[3]) {
+    float g = 2 * h[2] - 1, c = (g < 0 ? 1 + g : 1 - g) * h[1], a = (int)(h[0]) % 120 / 60.f - 1.0f;
+    int t[] = { 2, 2, 2, 3, 1, 2, 3, 3, 0, 4, 2, 0, 4, 1, 1, 2, 3, 1 };
+    S(0, c)
+    S(1, c * (a < 0 ? 1 + a : 1 - a))
+    S(2, 0)
+}
+uint32_t huecolor(float hue) {
+    float r = 0, g = 0, b = 0;
+    uint32_t color = 0;
+    int rgb[3] = {};
+    float hsl[3] = { hue, 1.0, .55 };
+    C(hsl, rgb);
+    r = rgb[0];
+    g = rgb[1];
+    b = rgb[2];
+    color |= (((uint8_t)r) << 16);
+    color |= (((uint8_t)g) << 8);
+    color |= ((uint8_t)b);
+    return color;
+}
+
+void pset(int x,int y,uint32_t data){
+    displayData[x + y * 370] = data;
+}
+
+volatile uint32_t color=0;
+float hue=0;
+int r=0;
+int centerX=370/2,centerY=690/2;
+const uint8_t font8x8[13][8] = {
+        {0x3c, 0x42, 0x46, 0x4a, 0x52, 0x62, 0x3c, 0x00},  // 0030 (zero)
+        {0x10, 0x30, 0x50, 0x10, 0x10, 0x10, 0x7c, 0x00},  // 0031 (one)
+        {0x3c, 0x42, 0x02, 0x0c, 0x30, 0x42, 0x7e, 0x00},  // 0032 (two)
+        {0x3c, 0x42, 0x02, 0x1c, 0x02, 0x42, 0x3c, 0x00},  // 0033 (three)
+        {0x08, 0x18, 0x28, 0x48, 0xfe, 0x08, 0x1c, 0x00},  // 0034 (four)
+        {0x7e, 0x40, 0x7c, 0x02, 0x02, 0x42, 0x3c, 0x00},  // 0035 (five)
+        {0x1c, 0x20, 0x40, 0x7c, 0x42, 0x42, 0x3c, 0x00},  // 0036 (six)
+        {0x7e, 0x42, 0x04, 0x08, 0x10, 0x10, 0x10, 0x00},  // 0037 (seven)
+        {0x3c, 0x42, 0x42, 0x3c, 0x42, 0x42, 0x3c, 0x00},  // 0038 (eight)
+        {0x3c, 0x42, 0x42, 0x3e, 0x02, 0x04, 0x38, 0x00},  // 0039 (nine)
+        {0x0c, 0x12, 0x10, 0x38, 0x10, 0x10, 0x38, 0x00},  // 0066 (f)
+        {0x00, 0x00, 0x6c, 0x32, 0x32, 0x2c, 0x20, 0x70},  // 0070 (p)
+        {0x00, 0x00, 0x3e, 0x40, 0x3c, 0x02, 0x7c, 0x00},  // 0073 (s)
+};
+void printChar(int index,int cx,int cy){
+    uint8_t* data=font8x8[index];
+    for(int y=0;y<8;y++){
+        int line=data[y];
+        for(int x=0;x<8;x++){
+            for(int r=0;r<2;r++){
+                for( int s=0;s<2;s++){
+                    if((line>>(7-x))&1==1){
+                        pset(cx+(7-y)*2+r,cy+x*2+s,0xffffff);
+                    }else{
+                        pset(cx+(7-y)*2+r,cy+x*2+s,0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+void printFPS(int fps){
+    printChar(fps/100%10,200,0);
+    printChar(fps/10%10,200,15);
+    printChar(fps%10,200,15*2);
+    printChar(10,200,15*3);
+    printChar(11,200,15*4);
+    printChar(12,200,15*5);
+}
+int time=0;
+int fps=0;
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim){
+    printFPS(fps);
+    fps=0;
+}
+void draw() {
+
+//    hue+=2;
+//    if(hue>359)hue=0;
+//    for(int i=150;i<690;i++){
+//        color=huecolor(hue);
+//        hue+=2;
+//        if(hue>359)hue=0;
+//        for(int j=0;j<370;j++){
+//            pset(j,i,color);
+//        }
+//    }
+    hue += 5;
+    if(hue>359)hue=0;
+    for (int i = 0; i < 360; i++) {
+        hue+=1;
+        if(hue>359)hue=0;
+        color=huecolor(hue);
+        for(int r=60;r<90;r+=10) {
+            int x1 = cos(i * PI / 180) * r + centerX;
+            int y1 = sin(i * PI / 180) * r + centerY;
+            for(int x=-7;x<7;x++){
+                for(int y=-7;y<7;y++) {
+                    pset(x1+x, y1+y, color);
+                }
+            }
+        }
+    }
+
+    fps+=1;
+}
+
+
+
 /* USER CODE END 0 */
 
 /**
@@ -255,6 +370,12 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
+
+  /* Enable I-Cache---------------------------------------------------------*/
+  SCB_EnableICache();
+
+  /* Enable D-Cache---------------------------------------------------------*/
+  SCB_EnableDCache();
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -274,11 +395,12 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_LTDC_Init();
+//  MX_LTDC_Init();
   MX_SPI4_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-    HAL_Delay(100);
-    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_SET);  //SPI CS
+    HAL_TIM_Base_Start_IT(&htim2);
+
     HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,GPIO_PIN_RESET);  //LED Indicator
     HAL_GPIO_WritePin(GPIOB,GPIO_PIN_2,GPIO_PIN_RESET);  //LED VCC
 
@@ -289,18 +411,46 @@ int main(void)
     //HAL_Delay(100);
     LCD_Sleep_Out_N_Display_On_Set();
 
+    MX_LTDC_Init();
+
+
+//    for(int i=150;i<690;i++){
+//        color=huecolor(hue);
+//        hue+=0.5;
+//        if(hue>=359)hue=0;
+//        for(int j=0;j<370;j++){
+//            displayData[(i)*370+j]=color;
+//        }
+//    }
+    for(int h=0;h<lgHeight;h++){
+        for(int w=0;w<lgWidth;w++) {
+            displayData[w + h * 370] = lg[w + h *lgWidth];
+            //displayData[w +(370-lgWidth)+ h * 370] = lg[w + h *lgWidth];
+        }
+    }
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
     while (1)
     {
+        draw();
 
+//      HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,GPIO_PIN_RESET);  //LED Indicator
+//      HAL_Delay(500);
+//      HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,GPIO_PIN_SET);  //LED Indicator
+//      HAL_Delay(500);
 
-      HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,GPIO_PIN_RESET);  //LED Indicator
-      HAL_Delay(500);
-      HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,GPIO_PIN_SET);  //LED Indicator
-      HAL_Delay(500);
+//        r+=2;
+//        if(r>690-150)r=0;
+//        for(int h=0;h<lgHeight;h++){
+//            for(int w=0;w<lgWidth;w++) {
+//                pset(w,h+r,lg[w + h *lgWidth]);
+//                //displayData[w+ (h+r) * 370] = lg[w + h *lgWidth];
+//            }
+//        }
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -322,7 +472,7 @@ void SystemClock_Config(void)
   HAL_PWREx_ConfigSupply(PWR_LDO_SUPPLY);
   /** Configure the main internal regulator output voltage
   */
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE0);
 
   while(!__HAL_PWR_GET_FLAG(PWR_FLAG_VOSRDY)) {}
   /** Macro to configure the PLL clock source
@@ -335,8 +485,16 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.HSIState = RCC_HSI_DIV1;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLM = 3;
+  RCC_OscInitStruct.PLL.PLLN = 70;
+  RCC_OscInitStruct.PLL.PLLP = 2;
+  RCC_OscInitStruct.PLL.PLLQ = 1;
+  RCC_OscInitStruct.PLL.PLLR = 2;
+  RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_3;
+  RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
+  RCC_OscInitStruct.PLL.PLLFRACN = 0;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -346,7 +504,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2
                               |RCC_CLOCKTYPE_D3PCLK1|RCC_CLOCKTYPE_D1PCLK1;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB3CLKDivider = RCC_APB3_DIV2;
@@ -354,7 +512,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB2CLKDivider = RCC_APB2_DIV2;
   RCC_ClkInitStruct.APB4CLKDivider = RCC_APB4_DIV2;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_7) != HAL_OK)
   {
     Error_Handler();
   }
