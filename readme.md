@@ -2,9 +2,14 @@
 this project intended to drive LG LD050WV1-SP01 LCD display using STM32H7B0VBT6 LTDC.
 
 ## what will it do
-display "daikin pichonkun"(ダイキン　ぴちょんくん💧) image and a generated rainbow-like rotating circle with fps displaying on the screen. <br/>
-the "pichonkun" image is defined in `Core/Src/lgb-logo-rbgdata.h`![](demo.png)<br/>
-this project may perform as external display hardware for macOS in the future.
+display "daikin pichonkun"(ダイキン　ぴちょんくん💧) image and a rotating circle with fps info displaying on the screen. <br/>
+the "pichonkun" image is defined in `Core/Src/lgb-logo-rbgdata.h`![](demo3.png)<br/>
+
+## improvements
+220527:<br/>
+1. changed LTDC freq to 42MHz to get stability and performance.
+2. changed buffer type to from ARGB888 to RGB888, making display almost in full screen(480*720) within internal sram (cost 99.5%).
+3. imporved demo algos by creating hue, sine, cosine LUT to improve performance. now rotating circle is bigger and fps promoted. full-screen color shifting also can up to 60fps.
 
 ## LG LD050WV1 screen configuration (lighting up) in brief
 ### steps
@@ -12,7 +17,7 @@ this project may perform as external display hardware for macOS in the future.
 2. "Display Initial Set"
 3. "Sleep Out And Display On Set"
 4. BackLight On (this can be async, backlight module circuit is separate from lcd module circuit.)
-5. LTDC signal start transfer(this is CANNOT be async, LTDC have to be inited after step 1-3).
+5. LTDC signal start transfer(this CANNOT be async, LTDC have to be inited after step 1-3).
 to do this, move `MX_LTDC_Init();` to where step 3 code done, after cubemx regenerated code.
 
 for step 1-3, read the LD050WV1-SP01 Specification PDF.<br/>
@@ -41,6 +46,7 @@ set manually in `Core/Src/ltdc.c`:<br/>
   hltdc.Init.AccumulatedActiveH = 831-10;
   hltdc.Init.TotalWidth = 624;
   hltdc.Init.TotalHeigh = 831;
+
 ```
 (data above are based on lcd specification and experimentation, which can make screen display in full-screen and improve timimg performance.)<br/>
 code have to be modified manually every time after cubemx generate code.

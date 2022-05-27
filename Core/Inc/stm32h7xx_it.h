@@ -59,6 +59,7 @@ void SysTick_Handler(void);
 void TIM2_IRQHandler(void);
 void LTDC_IRQHandler(void);
 void LTDC_ER_IRQHandler(void);
+void JPEG_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */

@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "jpeg.h"
 #include "ltdc.h"
 #include "spi.h"
 #include "tim.h"
@@ -247,37 +248,77 @@ void LCD_Display_Off_N_Sleep_In_Set(){
 
 
 #define PI 3.14159265
+
 #define S(o, n) r[t[(int)(h[0]) / 60 * 3 + o] + o - 2] = (n + h[2] - c / 2) * 255;
 void C(float h[3], int r[3]) {
-    float g = 2 * h[2] - 1, c = (g < 0 ? 1 + g : 1 - g) * h[1], a = (int)(h[0]) % 120 / 60.f - 1.0f;
+    float g = 2 * h[2] - 1, c = (g < 0 ? 1 + g : 1 - g) * h[1], a = (int)(h[0]) % 120 / 60.f - 1;
     int t[] = { 2, 2, 2, 3, 1, 2, 3, 3, 0, 4, 2, 0, 4, 1, 1, 2, 3, 1 };
     S(0, c)
     S(1, c * (a < 0 ? 1 + a : 1 - a))
     S(2, 0)
 }
+
 uint32_t huecolor(float hue) {
+    int normalized = (int)(hue /360.0 * 256 * 6);
+
+    //find the region for this position
+    int region = normalized / 256;
+
+    //find the distance to the start of the closest region
+    int x = normalized % 256;
+
+    uint8_t r = 0, g = 0, b = 0;
+    switch (region)
+    {
+        case 0: r = 255; g = 0;   b = 0;   g += x; break;
+        case 1: r = 255; g = 255; b = 0;   r -= x; break;
+        case 2: r = 0;   g = 255; b = 0;   b += x; break;
+        case 3: r = 0;   g = 255; b = 255; g -= x; break;
+        case 4: r = 0;   g = 0;   b = 255; r += x; break;
+        case 5: r = 255; g = 0;   b = 255; b -= x; break;
+    }
+    return r + (g << 8) + (b << 16);
+}
+void pset32to16(int x,int y,uint32_t data){
+    int r=data>>19&0b11111;
+    int g=data>>10&0b111111;
+    int b=data>>3&0b11111;
+    int color=0;
+    color|=r<<11|g<<5|b;
+    displayData[x + y * 480] = color;
+}
+
+uint16_t huecolor16(float hue) {
     float r = 0, g = 0, b = 0;
-    uint32_t color = 0;
+    uint16_t color = 0;
     int rgb[3] = {};
-    float hsl[3] = { hue, 1.0, .55 };
+    float hsl[3] = { hue, 1, .6 };
     C(hsl, rgb);
-    r = rgb[0];
-    g = rgb[1];
-    b = rgb[2];
-    color |= (((uint8_t)r) << 16);
-    color |= (((uint8_t)g) << 8);
-    color |= ((uint8_t)b);
+    r = rgb[0] * 0b11111 / 255;
+    g = rgb[1] * 0b111111 / 255;
+    b = rgb[2] * 0b11111 / 255;
+    color |= (((uint16_t)(r)&0b11111) << 11);
+    color |= (((uint16_t)(g)&0b111111) << 5);
+    color |= ((uint16_t)(b)&0b11111);
     return color;
 }
 
-void pset(int x,int y,uint32_t data){
-    displayData[x + y * 370] = data;
+
+void pset24(int x,int y,uint32_t data){
+    if(y>=720)return;
+    displayData[x*3 + y*3 * 480] = (data&0xff); //b
+    displayData[x*3+1 + y*3 * 480] = (data&0xff00)>>8; //g
+    displayData[x*3+2+ y*3 * 480] = (data&0xff0000)>>16; //r
+}
+
+void pset32(int x,int y,uint32_t data){
+    displayData[x + y * 480] = data;
 }
 
 volatile uint32_t color=0;
 float hue=0;
 int r=0;
-int centerX=370/2,centerY=690/2;
+int centerX=480/2,centerY=720/2;
 const uint8_t font8x8[13][8] = {
         {0x3c, 0x42, 0x46, 0x4a, 0x52, 0x62, 0x3c, 0x00},  // 0030 (zero)
         {0x10, 0x30, 0x50, 0x10, 0x10, 0x10, 0x7c, 0x00},  // 0031 (one)
@@ -301,9 +342,9 @@ void printChar(int index,int cx,int cy){
             for(int r=0;r<2;r++){
                 for( int s=0;s<2;s++){
                     if((line>>(7-x))&1==1){
-                        pset(cx+(7-y)*2+r,cy+x*2+s,0xffffff);
+                        pset24(cx+(7-y)*2+r,cy+x*2+s,0xffffff);
                     }else{
-                        pset(cx+(7-y)*2+r,cy+x*2+s,0);
+                        pset24(cx+(7-y)*2+r,cy+x*2+s,0);
                     }
                 }
             }
@@ -312,12 +353,12 @@ void printChar(int index,int cx,int cy){
 }
 
 void printFPS(int fps){
-    printChar(fps/100%10,200,0);
-    printChar(fps/10%10,200,15);
-    printChar(fps%10,200,15*2);
-    printChar(10,200,15*3);
-    printChar(11,200,15*4);
-    printChar(12,200,15*5);
+    printChar(fps/100%10,0,0);
+    printChar(fps/10%10,0,15);
+    printChar(fps%10,0,15*2);
+    printChar(10,0,15*3);
+    printChar(11,0,15*4);
+    printChar(12,0,15*5);
 }
 int time=0;
 int fps=0;
@@ -325,35 +366,38 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim){
     printFPS(fps);
     fps=0;
 }
+uint32_t hueLUT[180]={};
+float sineLUT[360]={};
+float cosineLUT[360]={};
 void draw() {
-
 //    hue+=2;
 //    if(hue>359)hue=0;
-//    for(int i=150;i<690;i++){
-//        color=huecolor(hue);
-//        hue+=2;
-//        if(hue>359)hue=0;
-//        for(int j=0;j<370;j++){
-//            pset(j,i,color);
+//    color=hueLUT[(int)hue/2];
+//    for(int i=0;i<800;i++){
+////        hue+=2;
+////        if(hue>359)hue=0;
+//        for(int j=16;j<480;j++){
+//            pset16(j,i,color);
 //        }
 //    }
-    hue += 5;
+
+    hue += 1;
     if(hue>359)hue=0;
     for (int i = 0; i < 360; i++) {
         hue+=1;
         if(hue>359)hue=0;
-        color=huecolor(hue);
-        for(int r=60;r<90;r+=10) {
-            int x1 = cos(i * PI / 180) * r + centerX;
-            int y1 = sin(i * PI / 180) * r + centerY;
-            for(int x=-7;x<7;x++){
-                for(int y=-7;y<7;y++) {
-                    pset(x1+x, y1+y, color);
+        color=hueLUT[(int)hue/2];
+        volatile out=color&0xff;
+        for(int r=100;r<=200;r+=5) {
+            int x1 = cosineLUT[i] * r + centerX;
+            int y1 = sineLUT[i] * r + centerY;
+            for(int x=-3;x<3;x++){
+                for(int y=-3;y<3;y++) {
+                    pset24(x1+x, y1+y, color);
                 }
             }
         }
     }
-
     fps+=1;
 }
 
@@ -368,7 +412,11 @@ void draw() {
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+    for(int i=0;i<360;i++){
+        hueLUT[i/2]= huecolor((float)i);
+        sineLUT[i]=sin(i*PI/180);
+        cosineLUT[i]=cos(i*PI/180);
+    }
   /* USER CODE END 1 */
 
   /* Enable I-Cache---------------------------------------------------------*/
@@ -398,6 +446,7 @@ int main(void)
 //  MX_LTDC_Init();
   MX_SPI4_Init();
   MX_TIM2_Init();
+  MX_JPEG_Init();
   /* USER CODE BEGIN 2 */
     HAL_TIM_Base_Start_IT(&htim2);
 
@@ -410,7 +459,7 @@ int main(void)
     LCD_Display_Initial_Set();
     //HAL_Delay(100);
     LCD_Sleep_Out_N_Display_On_Set();
-
+    
     MX_LTDC_Init();
 
 
@@ -422,12 +471,19 @@ int main(void)
 //            displayData[(i)*370+j]=color;
 //        }
 //    }
+    for(int i=0;i<480;i++){
+        for(int j=0;j<800;j++){
+            pset24(i,j,0xffffff);
+        }
+    }
     for(int h=0;h<lgHeight;h++){
         for(int w=0;w<lgWidth;w++) {
-            displayData[w + h * 370] = lg[w + h *lgWidth];
+//            displayData[w + h * 370] = lg[w + h *lgWidth];
+            pset24(w,h,lg[w + h *lgWidth]);
             //displayData[w +(370-lgWidth)+ h * 370] = lg[w + h *lgWidth];
         }
     }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
