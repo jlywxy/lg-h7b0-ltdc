@@ -1916,7 +1916,7 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                 0x0000000008000000                g_pfnVectors
                 0x00000000080002ac                . = ALIGN (0x4)
 
-.text           0x00000000080002b0     0x6e9c
+.text           0x00000000080002b0     0x6e74
                 0x00000000080002b0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080002b0       0x40 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
@@ -2052,554 +2052,554 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  .text.HAL_TIM_PeriodElapsedCallback
                 0x0000000008001d9c       0x14 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
                 0x0000000008001d9c                HAL_TIM_PeriodElapsedCallback
- .text.draw     0x0000000008001db0      0x120 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
+ .text.draw     0x0000000008001db0      0x11c CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
                 0x0000000008001db0                draw
  .text.Error_Handler
-                0x0000000008001ed0       0x14 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
-                0x0000000008001ed0                Error_Handler
+                0x0000000008001ecc       0x14 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
+                0x0000000008001ecc                Error_Handler
  .text.SystemClock_Config
-                0x0000000008001ee4       0xc0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
-                0x0000000008001ee4                SystemClock_Config
- *fill*         0x0000000008001fa4        0x4 
- .text.main     0x0000000008001fa8      0x1cc CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
-                0x0000000008001fa8                main
+                0x0000000008001ee0       0xc0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
+                0x0000000008001ee0                SystemClock_Config
+ .text.main     0x0000000008001fa0      0x1a8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
+                0x0000000008001fa0                main
  .text.MX_SPI4_Init
-                0x0000000008002174       0x64 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
-                0x0000000008002174                MX_SPI4_Init
+                0x0000000008002148       0x64 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
+                0x0000000008002148                MX_SPI4_Init
  .text.HAL_SPI_MspInit
-                0x00000000080021d8       0x9c CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
-                0x00000000080021d8                HAL_SPI_MspInit
+                0x00000000080021ac       0x9c CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
+                0x00000000080021ac                HAL_SPI_MspInit
  .text.HAL_MspInit
-                0x0000000008002274       0x24 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
-                0x0000000008002274                HAL_MspInit
+                0x0000000008002248       0x24 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+                0x0000000008002248                HAL_MspInit
  .text.NMI_Handler
-                0x0000000008002298        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x0000000008002298                NMI_Handler
+                0x000000000800226c        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x000000000800226c                NMI_Handler
  .text.HardFault_Handler
-                0x000000000800229a        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x000000000800229a                HardFault_Handler
+                0x000000000800226e        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x000000000800226e                HardFault_Handler
  .text.MemManage_Handler
-                0x000000000800229c        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x000000000800229c                MemManage_Handler
+                0x0000000008002270        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0000000008002270                MemManage_Handler
  .text.BusFault_Handler
-                0x000000000800229e        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x000000000800229e                BusFault_Handler
+                0x0000000008002272        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0000000008002272                BusFault_Handler
  .text.UsageFault_Handler
-                0x00000000080022a0        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x00000000080022a0                UsageFault_Handler
+                0x0000000008002274        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0000000008002274                UsageFault_Handler
  .text.SVC_Handler
-                0x00000000080022a2        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x00000000080022a2                SVC_Handler
+                0x0000000008002276        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0000000008002276                SVC_Handler
  .text.DebugMon_Handler
-                0x00000000080022a4        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x00000000080022a4                DebugMon_Handler
+                0x0000000008002278        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0000000008002278                DebugMon_Handler
  .text.PendSV_Handler
-                0x00000000080022a6        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x00000000080022a6                PendSV_Handler
+                0x000000000800227a        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x000000000800227a                PendSV_Handler
  .text.SysTick_Handler
-                0x00000000080022a8        0x8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x00000000080022a8                SysTick_Handler
+                0x000000000800227c        0x8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x000000000800227c                SysTick_Handler
  .text.TIM2_IRQHandler
-                0x00000000080022b0       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x00000000080022b0                TIM2_IRQHandler
+                0x0000000008002284       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0000000008002284                TIM2_IRQHandler
  .text.LTDC_IRQHandler
-                0x00000000080022c0       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x00000000080022c0                LTDC_IRQHandler
+                0x0000000008002294       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0000000008002294                LTDC_IRQHandler
  .text.LTDC_ER_IRQHandler
-                0x00000000080022d0       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x00000000080022d0                LTDC_ER_IRQHandler
+                0x00000000080022a4       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x00000000080022a4                LTDC_ER_IRQHandler
  .text.JPEG_IRQHandler
-                0x00000000080022e0       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x00000000080022e0                JPEG_IRQHandler
+                0x00000000080022b4       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x00000000080022b4                JPEG_IRQHandler
  .text.SystemInit
-                0x00000000080022f0       0x98 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
-                0x00000000080022f0                SystemInit
+                0x00000000080022c4       0x98 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
+                0x00000000080022c4                SystemInit
  .text.MX_TIM2_Init
-                0x0000000008002388       0x74 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
-                0x0000000008002388                MX_TIM2_Init
+                0x000000000800235c       0x74 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
+                0x000000000800235c                MX_TIM2_Init
  .text.HAL_TIM_Base_MspInit
-                0x00000000080023fc       0x44 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
-                0x00000000080023fc                HAL_TIM_Base_MspInit
+                0x00000000080023d0       0x44 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
+                0x00000000080023d0                HAL_TIM_Base_MspInit
  .text.Reset_Handler
-                0x0000000008002440       0x50 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
-                0x0000000008002440                Reset_Handler
+                0x0000000008002414       0x50 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
+                0x0000000008002414                Reset_Handler
  .text.Default_Handler
-                0x0000000008002490        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
-                0x0000000008002490                BDMA2_Channel4_IRQHandler
-                0x0000000008002490                HASH_RNG_IRQHandler
-                0x0000000008002490                EXTI2_IRQHandler
-                0x0000000008002490                TIM8_CC_IRQHandler
-                0x0000000008002490                UART8_IRQHandler
-                0x0000000008002490                BDMA2_Channel1_IRQHandler
-                0x0000000008002490                SPI4_IRQHandler
-                0x0000000008002490                BDMA2_Channel0_IRQHandler
-                0x0000000008002490                TIM1_CC_IRQHandler
-                0x0000000008002490                DMA2_Stream5_IRQHandler
-                0x0000000008002490                DMA1_Stream5_IRQHandler
-                0x0000000008002490                EXTI3_IRQHandler
-                0x0000000008002490                LPTIM4_IRQHandler
-                0x0000000008002490                TIM8_TRG_COM_TIM14_IRQHandler
-                0x0000000008002490                LPTIM2_IRQHandler
-                0x0000000008002490                DFSDM1_FLT1_IRQHandler
-                0x0000000008002490                DMAMUX2_OVR_IRQHandler
-                0x0000000008002490                GFXMMU_IRQHandler
-                0x0000000008002490                TIM8_UP_TIM13_IRQHandler
-                0x0000000008002490                I2C3_ER_IRQHandler
-                0x0000000008002490                DFSDM1_FLT2_IRQHandler
-                0x0000000008002490                USART10_IRQHandler
-                0x0000000008002490                MDMA_IRQHandler
-                0x0000000008002490                LPTIM3_IRQHandler
-                0x0000000008002490                BDMA2_Channel3_IRQHandler
-                0x0000000008002490                HSEM1_IRQHandler
-                0x0000000008002490                EXTI0_IRQHandler
-                0x0000000008002490                I2C2_EV_IRQHandler
-                0x0000000008002490                DAC2_IRQHandler
-                0x0000000008002490                DMA1_Stream2_IRQHandler
-                0x0000000008002490                FPU_IRQHandler
-                0x0000000008002490                OTG_HS_WKUP_IRQHandler
-                0x0000000008002490                FDCAN1_IT1_IRQHandler
-                0x0000000008002490                DMA2_Stream2_IRQHandler
-                0x0000000008002490                SPI1_IRQHandler
-                0x0000000008002490                OCTOSPI1_IRQHandler
-                0x0000000008002490                TIM6_DAC_IRQHandler
-                0x0000000008002490                BDMA2_Channel6_IRQHandler
-                0x0000000008002490                DMA2_Stream3_IRQHandler
-                0x0000000008002490                OCTOSPI2_IRQHandler
-                0x0000000008002490                SAI2_IRQHandler
-                0x0000000008002490                BDMA1_IRQHandler
-                0x0000000008002490                DFSDM1_FLT3_IRQHandler
-                0x0000000008002490                USART6_IRQHandler
-                0x0000000008002490                TIM17_IRQHandler
-                0x0000000008002490                USART3_IRQHandler
-                0x0000000008002490                CRYP_IRQHandler
-                0x0000000008002490                LPTIM5_IRQHandler
-                0x0000000008002490                UART5_IRQHandler
-                0x0000000008002490                DMA2_Stream0_IRQHandler
-                0x0000000008002490                TIM4_IRQHandler
-                0x0000000008002490                I2C1_EV_IRQHandler
-                0x0000000008002490                DMA1_Stream6_IRQHandler
-                0x0000000008002490                DMAMUX1_OVR_IRQHandler
-                0x0000000008002490                DMA1_Stream1_IRQHandler
-                0x0000000008002490                TIM16_IRQHandler
-                0x0000000008002490                UART4_IRQHandler
-                0x0000000008002490                TIM3_IRQHandler
-                0x0000000008002490                RCC_IRQHandler
-                0x0000000008002490                UART9_IRQHandler
-                0x0000000008002490                TIM8_BRK_TIM12_IRQHandler
-                0x0000000008002490                TIM1_TRG_COM_IRQHandler
-                0x0000000008002490                Default_Handler
-                0x0000000008002490                ECC_IRQHandler
-                0x0000000008002490                BDMA2_Channel2_IRQHandler
-                0x0000000008002490                CEC_IRQHandler
-                0x0000000008002490                EXTI15_10_IRQHandler
-                0x0000000008002490                DFSDM1_FLT4_IRQHandler
-                0x0000000008002490                ADC_IRQHandler
-                0x0000000008002490                OTFDEC1_IRQHandler
-                0x0000000008002490                DMA1_Stream7_IRQHandler
-                0x0000000008002490                SPI5_IRQHandler
-                0x0000000008002490                TIM7_IRQHandler
-                0x0000000008002490                SDMMC1_IRQHandler
-                0x0000000008002490                TIM5_IRQHandler
-                0x0000000008002490                DMA2_Stream7_IRQHandler
-                0x0000000008002490                TIM15_IRQHandler
-                0x0000000008002490                I2C3_EV_IRQHandler
-                0x0000000008002490                DFSDM2_IRQHandler
-                0x0000000008002490                EXTI9_5_IRQHandler
-                0x0000000008002490                RTC_WKUP_IRQHandler
-                0x0000000008002490                SPDIF_RX_IRQHandler
-                0x0000000008002490                PVD_PVM_IRQHandler
-                0x0000000008002490                SPI2_IRQHandler
-                0x0000000008002490                OTG_HS_EP1_IN_IRQHandler
-                0x0000000008002490                DFSDM1_FLT5_IRQHandler
-                0x0000000008002490                DMA1_Stream0_IRQHandler
-                0x0000000008002490                OTFDEC2_IRQHandler
-                0x0000000008002490                CRS_IRQHandler
-                0x0000000008002490                EXTI4_IRQHandler
-                0x0000000008002490                DFSDM1_FLT6_IRQHandler
-                0x0000000008002490                FDCAN2_IT1_IRQHandler
-                0x0000000008002490                COMP_IRQHandler
-                0x0000000008002490                TIM1_UP_IRQHandler
-                0x0000000008002490                OTG_HS_EP1_OUT_IRQHandler
-                0x0000000008002490                WWDG_IRQHandler
-                0x0000000008002490                SPI6_IRQHandler
-                0x0000000008002490                MDIOS_IRQHandler
-                0x0000000008002490                I2C4_EV_IRQHandler
-                0x0000000008002490                FDCAN2_IT0_IRQHandler
-                0x0000000008002490                LPUART1_IRQHandler
-                0x0000000008002490                FDCAN1_IT0_IRQHandler
-                0x0000000008002490                BDMA2_Channel5_IRQHandler
-                0x0000000008002490                OTG_HS_IRQHandler
-                0x0000000008002490                DMA2D_IRQHandler
-                0x0000000008002490                TIM1_BRK_IRQHandler
-                0x0000000008002490                EXTI1_IRQHandler
-                0x0000000008002490                SDMMC2_IRQHandler
-                0x0000000008002490                DTS_IRQHandler
-                0x0000000008002490                UART7_IRQHandler
-                0x0000000008002490                MDIOS_WKUP_IRQHandler
-                0x0000000008002490                USART2_IRQHandler
-                0x0000000008002490                DFSDM1_FLT0_IRQHandler
-                0x0000000008002490                I2C2_ER_IRQHandler
-                0x0000000008002490                DMA2_Stream1_IRQHandler
-                0x0000000008002490                DFSDM1_FLT7_IRQHandler
-                0x0000000008002490                FLASH_IRQHandler
-                0x0000000008002490                DMA2_Stream4_IRQHandler
-                0x0000000008002490                USART1_IRQHandler
-                0x0000000008002490                SPI3_IRQHandler
-                0x0000000008002490                WAKEUP_PIN_IRQHandler
-                0x0000000008002490                DMA1_Stream4_IRQHandler
-                0x0000000008002490                I2C1_ER_IRQHandler
-                0x0000000008002490                FMC_IRQHandler
-                0x0000000008002490                BDMA2_Channel7_IRQHandler
-                0x0000000008002490                FDCAN_CAL_IRQHandler
-                0x0000000008002490                SWPMI1_IRQHandler
-                0x0000000008002490                LPTIM1_IRQHandler
-                0x0000000008002490                DCMI_PSSI_IRQHandler
-                0x0000000008002490                I2C4_ER_IRQHandler
-                0x0000000008002490                DMA2_Stream6_IRQHandler
-                0x0000000008002490                SAI1_IRQHandler
-                0x0000000008002490                DMA1_Stream3_IRQHandler
-                0x0000000008002490                RTC_TAMP_STAMP_CSS_LSE_IRQHandler
-                0x0000000008002490                RTC_Alarm_IRQHandler
- *fill*         0x0000000008002492        0x2 
+                0x0000000008002464        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
+                0x0000000008002464                BDMA2_Channel4_IRQHandler
+                0x0000000008002464                HASH_RNG_IRQHandler
+                0x0000000008002464                EXTI2_IRQHandler
+                0x0000000008002464                TIM8_CC_IRQHandler
+                0x0000000008002464                UART8_IRQHandler
+                0x0000000008002464                BDMA2_Channel1_IRQHandler
+                0x0000000008002464                SPI4_IRQHandler
+                0x0000000008002464                BDMA2_Channel0_IRQHandler
+                0x0000000008002464                TIM1_CC_IRQHandler
+                0x0000000008002464                DMA2_Stream5_IRQHandler
+                0x0000000008002464                DMA1_Stream5_IRQHandler
+                0x0000000008002464                EXTI3_IRQHandler
+                0x0000000008002464                LPTIM4_IRQHandler
+                0x0000000008002464                TIM8_TRG_COM_TIM14_IRQHandler
+                0x0000000008002464                LPTIM2_IRQHandler
+                0x0000000008002464                DFSDM1_FLT1_IRQHandler
+                0x0000000008002464                DMAMUX2_OVR_IRQHandler
+                0x0000000008002464                GFXMMU_IRQHandler
+                0x0000000008002464                TIM8_UP_TIM13_IRQHandler
+                0x0000000008002464                I2C3_ER_IRQHandler
+                0x0000000008002464                DFSDM1_FLT2_IRQHandler
+                0x0000000008002464                USART10_IRQHandler
+                0x0000000008002464                MDMA_IRQHandler
+                0x0000000008002464                LPTIM3_IRQHandler
+                0x0000000008002464                BDMA2_Channel3_IRQHandler
+                0x0000000008002464                HSEM1_IRQHandler
+                0x0000000008002464                EXTI0_IRQHandler
+                0x0000000008002464                I2C2_EV_IRQHandler
+                0x0000000008002464                DAC2_IRQHandler
+                0x0000000008002464                DMA1_Stream2_IRQHandler
+                0x0000000008002464                FPU_IRQHandler
+                0x0000000008002464                OTG_HS_WKUP_IRQHandler
+                0x0000000008002464                FDCAN1_IT1_IRQHandler
+                0x0000000008002464                DMA2_Stream2_IRQHandler
+                0x0000000008002464                SPI1_IRQHandler
+                0x0000000008002464                OCTOSPI1_IRQHandler
+                0x0000000008002464                TIM6_DAC_IRQHandler
+                0x0000000008002464                BDMA2_Channel6_IRQHandler
+                0x0000000008002464                DMA2_Stream3_IRQHandler
+                0x0000000008002464                OCTOSPI2_IRQHandler
+                0x0000000008002464                SAI2_IRQHandler
+                0x0000000008002464                BDMA1_IRQHandler
+                0x0000000008002464                DFSDM1_FLT3_IRQHandler
+                0x0000000008002464                USART6_IRQHandler
+                0x0000000008002464                TIM17_IRQHandler
+                0x0000000008002464                USART3_IRQHandler
+                0x0000000008002464                CRYP_IRQHandler
+                0x0000000008002464                LPTIM5_IRQHandler
+                0x0000000008002464                UART5_IRQHandler
+                0x0000000008002464                DMA2_Stream0_IRQHandler
+                0x0000000008002464                TIM4_IRQHandler
+                0x0000000008002464                I2C1_EV_IRQHandler
+                0x0000000008002464                DMA1_Stream6_IRQHandler
+                0x0000000008002464                DMAMUX1_OVR_IRQHandler
+                0x0000000008002464                DMA1_Stream1_IRQHandler
+                0x0000000008002464                TIM16_IRQHandler
+                0x0000000008002464                UART4_IRQHandler
+                0x0000000008002464                TIM3_IRQHandler
+                0x0000000008002464                RCC_IRQHandler
+                0x0000000008002464                UART9_IRQHandler
+                0x0000000008002464                TIM8_BRK_TIM12_IRQHandler
+                0x0000000008002464                TIM1_TRG_COM_IRQHandler
+                0x0000000008002464                Default_Handler
+                0x0000000008002464                ECC_IRQHandler
+                0x0000000008002464                BDMA2_Channel2_IRQHandler
+                0x0000000008002464                CEC_IRQHandler
+                0x0000000008002464                EXTI15_10_IRQHandler
+                0x0000000008002464                DFSDM1_FLT4_IRQHandler
+                0x0000000008002464                ADC_IRQHandler
+                0x0000000008002464                OTFDEC1_IRQHandler
+                0x0000000008002464                DMA1_Stream7_IRQHandler
+                0x0000000008002464                SPI5_IRQHandler
+                0x0000000008002464                TIM7_IRQHandler
+                0x0000000008002464                SDMMC1_IRQHandler
+                0x0000000008002464                TIM5_IRQHandler
+                0x0000000008002464                DMA2_Stream7_IRQHandler
+                0x0000000008002464                TIM15_IRQHandler
+                0x0000000008002464                I2C3_EV_IRQHandler
+                0x0000000008002464                DFSDM2_IRQHandler
+                0x0000000008002464                EXTI9_5_IRQHandler
+                0x0000000008002464                RTC_WKUP_IRQHandler
+                0x0000000008002464                SPDIF_RX_IRQHandler
+                0x0000000008002464                PVD_PVM_IRQHandler
+                0x0000000008002464                SPI2_IRQHandler
+                0x0000000008002464                OTG_HS_EP1_IN_IRQHandler
+                0x0000000008002464                DFSDM1_FLT5_IRQHandler
+                0x0000000008002464                DMA1_Stream0_IRQHandler
+                0x0000000008002464                OTFDEC2_IRQHandler
+                0x0000000008002464                CRS_IRQHandler
+                0x0000000008002464                EXTI4_IRQHandler
+                0x0000000008002464                DFSDM1_FLT6_IRQHandler
+                0x0000000008002464                FDCAN2_IT1_IRQHandler
+                0x0000000008002464                COMP_IRQHandler
+                0x0000000008002464                TIM1_UP_IRQHandler
+                0x0000000008002464                OTG_HS_EP1_OUT_IRQHandler
+                0x0000000008002464                WWDG_IRQHandler
+                0x0000000008002464                SPI6_IRQHandler
+                0x0000000008002464                MDIOS_IRQHandler
+                0x0000000008002464                I2C4_EV_IRQHandler
+                0x0000000008002464                FDCAN2_IT0_IRQHandler
+                0x0000000008002464                LPUART1_IRQHandler
+                0x0000000008002464                FDCAN1_IT0_IRQHandler
+                0x0000000008002464                BDMA2_Channel5_IRQHandler
+                0x0000000008002464                OTG_HS_IRQHandler
+                0x0000000008002464                DMA2D_IRQHandler
+                0x0000000008002464                TIM1_BRK_IRQHandler
+                0x0000000008002464                EXTI1_IRQHandler
+                0x0000000008002464                SDMMC2_IRQHandler
+                0x0000000008002464                DTS_IRQHandler
+                0x0000000008002464                UART7_IRQHandler
+                0x0000000008002464                MDIOS_WKUP_IRQHandler
+                0x0000000008002464                USART2_IRQHandler
+                0x0000000008002464                DFSDM1_FLT0_IRQHandler
+                0x0000000008002464                I2C2_ER_IRQHandler
+                0x0000000008002464                DMA2_Stream1_IRQHandler
+                0x0000000008002464                DFSDM1_FLT7_IRQHandler
+                0x0000000008002464                FLASH_IRQHandler
+                0x0000000008002464                DMA2_Stream4_IRQHandler
+                0x0000000008002464                USART1_IRQHandler
+                0x0000000008002464                SPI3_IRQHandler
+                0x0000000008002464                WAKEUP_PIN_IRQHandler
+                0x0000000008002464                DMA1_Stream4_IRQHandler
+                0x0000000008002464                I2C1_ER_IRQHandler
+                0x0000000008002464                FMC_IRQHandler
+                0x0000000008002464                BDMA2_Channel7_IRQHandler
+                0x0000000008002464                FDCAN_CAL_IRQHandler
+                0x0000000008002464                SWPMI1_IRQHandler
+                0x0000000008002464                LPTIM1_IRQHandler
+                0x0000000008002464                DCMI_PSSI_IRQHandler
+                0x0000000008002464                I2C4_ER_IRQHandler
+                0x0000000008002464                DMA2_Stream6_IRQHandler
+                0x0000000008002464                SAI1_IRQHandler
+                0x0000000008002464                DMA1_Stream3_IRQHandler
+                0x0000000008002464                RTC_TAMP_STAMP_CSS_LSE_IRQHandler
+                0x0000000008002464                RTC_Alarm_IRQHandler
+ *fill*         0x0000000008002466        0x2 
  .text.HAL_InitTick
-                0x0000000008002494       0x50 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x0000000008002494                HAL_InitTick
+                0x0000000008002468       0x50 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x0000000008002468                HAL_InitTick
  .text.HAL_Init
-                0x00000000080024e4       0x5c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x00000000080024e4                HAL_Init
+                0x00000000080024b8       0x5c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x00000000080024b8                HAL_Init
  .text.HAL_IncTick
-                0x0000000008002540       0x18 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x0000000008002540                HAL_IncTick
+                0x0000000008002514       0x18 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x0000000008002514                HAL_IncTick
  .text.HAL_GetTick
-                0x0000000008002558        0xc CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x0000000008002558                HAL_GetTick
+                0x000000000800252c        0xc CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x000000000800252c                HAL_GetTick
  .text.HAL_Delay
-                0x0000000008002564       0x28 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x0000000008002564                HAL_Delay
+                0x0000000008002538       0x28 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x0000000008002538                HAL_Delay
  .text.HAL_NVIC_SetPriorityGrouping
-                0x000000000800258c       0x24 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
-                0x000000000800258c                HAL_NVIC_SetPriorityGrouping
+                0x0000000008002560       0x24 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x0000000008002560                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x00000000080025b0       0x6c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
-                0x00000000080025b0                HAL_NVIC_SetPriority
+                0x0000000008002584       0x6c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x0000000008002584                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x000000000800261c       0x1c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
-                0x000000000800261c                HAL_NVIC_EnableIRQ
+                0x00000000080025f0       0x1c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x00000000080025f0                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x0000000008002638       0x28 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
-                0x0000000008002638                HAL_SYSTICK_Config
+                0x000000000800260c       0x28 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x000000000800260c                HAL_SYSTICK_Config
  .text.HAL_GPIO_Init
-                0x0000000008002660      0x228 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
-                0x0000000008002660                HAL_GPIO_Init
+                0x0000000008002634      0x228 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+                0x0000000008002634                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x0000000008002888        0xc CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
-                0x0000000008002888                HAL_GPIO_WritePin
+                0x000000000800285c        0xc CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+                0x000000000800285c                HAL_GPIO_WritePin
  .text.JPEG_Bits_To_SizeCodes
-                0x0000000008002894       0x80 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008002868       0x80 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.JPEG_ACHuff_BitsVals_To_SizeCodes
-                0x0000000008002914       0x6c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x00000000080028e8       0x6c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.JPEG_DCHuff_BitsVals_To_SizeCodes
-                0x0000000008002980       0x5a CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008002954       0x5a CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.JPEG_Set_HuffDC_Mem
-                0x00000000080029da       0x9a CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x00000000080029ae       0x9a CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.JPEG_Set_HuffAC_Mem
-                0x0000000008002a74       0xb8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008002a48       0xb8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.JPEG_Set_Huff_DHTMem
-                0x0000000008002b2c      0x26c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008002b00      0x26c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.JPEG_Set_HuffEnc_Mem
-                0x0000000008002d98       0x68 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008002d6c       0x68 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.JPEG_GetQuality
-                0x0000000008002e00       0x74 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008002dd4       0x74 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.HAL_JPEG_Init
-                0x0000000008002e74       0xa0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-                0x0000000008002e74                HAL_JPEG_Init
+                0x0000000008002e48       0xa0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008002e48                HAL_JPEG_Init
  .text.HAL_JPEG_GetInfo
-                0x0000000008002f14       0xd0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-                0x0000000008002f14                HAL_JPEG_GetInfo
+                0x0000000008002ee8       0xd0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008002ee8                HAL_JPEG_GetInfo
  .text.HAL_JPEG_Pause
-                0x0000000008002fe4       0x64 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-                0x0000000008002fe4                HAL_JPEG_Pause
+                0x0000000008002fb8       0x64 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008002fb8                HAL_JPEG_Pause
  .text.HAL_JPEG_InfoReadyCallback
-                0x0000000008003048        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-                0x0000000008003048                HAL_JPEG_InfoReadyCallback
+                0x000000000800301c        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x000000000800301c                HAL_JPEG_InfoReadyCallback
  .text.HAL_JPEG_EncodeCpltCallback
-                0x000000000800304a        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-                0x000000000800304a                HAL_JPEG_EncodeCpltCallback
+                0x000000000800301e        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x000000000800301e                HAL_JPEG_EncodeCpltCallback
  .text.HAL_JPEG_DecodeCpltCallback
-                0x000000000800304c        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-                0x000000000800304c                HAL_JPEG_DecodeCpltCallback
+                0x0000000008003020        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008003020                HAL_JPEG_DecodeCpltCallback
  .text.HAL_JPEG_GetDataCallback
-                0x000000000800304e        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-                0x000000000800304e                HAL_JPEG_GetDataCallback
+                0x0000000008003022        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008003022                HAL_JPEG_GetDataCallback
  .text.JPEG_ReadInputData
-                0x0000000008003050       0xde CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008003024       0xde CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.HAL_JPEG_DataReadyCallback
-                0x000000000800312e        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-                0x000000000800312e                HAL_JPEG_DataReadyCallback
+                0x0000000008003102        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008003102                HAL_JPEG_DataReadyCallback
  .text.JPEG_StoreOutputData
-                0x0000000008003130      0x122 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008003104      0x122 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.JPEG_Process
-                0x0000000008003252      0x11a CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008003226      0x11a CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.JPEG_DMA_PollResidualData
-                0x000000000800336c       0xc2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008003340       0xc2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.JPEG_DMA_EndProcess
-                0x000000000800342e       0x90 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008003402       0x90 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.JPEG_DMA_ContinueProcess
-                0x00000000080034be       0x9c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x0000000008003492       0x9c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .text.HAL_JPEG_IRQHandler
-                0x000000000800355a       0x2e CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-                0x000000000800355a                HAL_JPEG_IRQHandler
+                0x000000000800352e       0x2e CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x000000000800352e                HAL_JPEG_IRQHandler
  .text.LTDC_SetConfig
-                0x0000000008003588      0x1b8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+                0x000000000800355c      0x1b8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
  .text.HAL_LTDC_Init
-                0x0000000008003740       0xf8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
-                0x0000000008003740                HAL_LTDC_Init
+                0x0000000008003714       0xf8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+                0x0000000008003714                HAL_LTDC_Init
  .text.HAL_LTDC_ErrorCallback
-                0x0000000008003838        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
-                0x0000000008003838                HAL_LTDC_ErrorCallback
+                0x000000000800380c        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+                0x000000000800380c                HAL_LTDC_ErrorCallback
  .text.HAL_LTDC_LineEventCallback
-                0x000000000800383a        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
-                0x000000000800383a                HAL_LTDC_LineEventCallback
+                0x000000000800380e        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+                0x000000000800380e                HAL_LTDC_LineEventCallback
  .text.HAL_LTDC_ReloadEventCallback
-                0x000000000800383c        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
-                0x000000000800383c                HAL_LTDC_ReloadEventCallback
+                0x0000000008003810        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+                0x0000000008003810                HAL_LTDC_ReloadEventCallback
  .text.HAL_LTDC_IRQHandler
-                0x000000000800383e       0xda CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
-                0x000000000800383e                HAL_LTDC_IRQHandler
+                0x0000000008003812       0xda CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+                0x0000000008003812                HAL_LTDC_IRQHandler
  .text.HAL_LTDC_ConfigLayer
-                0x0000000008003918       0x68 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
-                0x0000000008003918                HAL_LTDC_ConfigLayer
+                0x00000000080038ec       0x68 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+                0x00000000080038ec                HAL_LTDC_ConfigLayer
  .text.HAL_MDMA_Abort_IT
-                0x0000000008003980       0x2c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
-                0x0000000008003980                HAL_MDMA_Abort_IT
+                0x0000000008003954       0x2c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
+                0x0000000008003954                HAL_MDMA_Abort_IT
  .text.HAL_PWREx_ConfigSupply
-                0x00000000080039ac       0x54 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
-                0x00000000080039ac                HAL_PWREx_ConfigSupply
+                0x0000000008003980       0x54 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+                0x0000000008003980                HAL_PWREx_ConfigSupply
  .text.HAL_RCC_OscConfig
-                0x0000000008003a00      0x624 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x0000000008003a00                HAL_RCC_OscConfig
+                0x00000000080039d4      0x624 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x00000000080039d4                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x0000000008004024      0x218 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x0000000008004024                HAL_RCC_GetSysClockFreq
+                0x0000000008003ff8      0x218 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x0000000008003ff8                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x000000000800423c      0x294 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x000000000800423c                HAL_RCC_ClockConfig
+                0x0000000008004210      0x294 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x0000000008004210                HAL_RCC_ClockConfig
  .text.RCCEx_PLL2_Config
-                0x00000000080044d0      0x10c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+                0x00000000080044a4      0x10c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
  .text.RCCEx_PLL3_Config
-                0x00000000080045dc      0x10c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+                0x00000000080045b0      0x10c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x00000000080046e8      0x96c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
-                0x00000000080046e8                HAL_RCCEx_PeriphCLKConfig
+                0x00000000080046bc      0x96c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+                0x00000000080046bc                HAL_RCCEx_PeriphCLKConfig
  .text.SPI_CloseTransfer
-                0x0000000008005054       0xcc CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+                0x0000000008005028       0xcc CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
  .text.SPI_GetPacketSize
-                0x0000000008005120       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+                0x00000000080050f4       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
  .text.SPI_WaitOnFlagUntilTimeout
-                0x0000000008005130       0x48 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+                0x0000000008005104       0x48 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
  .text.HAL_SPI_Init
-                0x0000000008005178      0x168 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
-                0x0000000008005178                HAL_SPI_Init
+                0x000000000800514c      0x168 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+                0x000000000800514c                HAL_SPI_Init
  .text.HAL_SPI_Transmit
-                0x00000000080052e0      0x2c4 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
-                0x00000000080052e0                HAL_SPI_Transmit
+                0x00000000080052b4      0x2c4 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+                0x00000000080052b4                HAL_SPI_Transmit
  .text.TIM_TI1_ConfigInputStage
-                0x00000000080055a4       0x24 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x0000000008005578       0x24 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
  .text.TIM_TI2_ConfigInputStage
-                0x00000000080055c8       0x26 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
- *fill*         0x00000000080055ee        0x2 
+                0x000000000800559c       0x26 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+ *fill*         0x00000000080055c2        0x2 
  .text.TIM_ITRx_SetConfig
-                0x00000000080055f0       0x14 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x00000000080055c4       0x14 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
  .text.HAL_TIM_Base_Start_IT
-                0x0000000008005604       0x90 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-                0x0000000008005604                HAL_TIM_Base_Start_IT
+                0x00000000080055d8       0x90 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x00000000080055d8                HAL_TIM_Base_Start_IT
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x0000000008005694        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-                0x0000000008005694                HAL_TIM_OC_DelayElapsedCallback
+                0x0000000008005668        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x0000000008005668                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x0000000008005696        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-                0x0000000008005696                HAL_TIM_IC_CaptureCallback
+                0x000000000800566a        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x000000000800566a                HAL_TIM_IC_CaptureCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x0000000008005698        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-                0x0000000008005698                HAL_TIM_PWM_PulseFinishedCallback
+                0x000000000800566c        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x000000000800566c                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x000000000800569a        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-                0x000000000800569a                HAL_TIM_TriggerCallback
+                0x000000000800566e        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x000000000800566e                HAL_TIM_TriggerCallback
  .text.HAL_TIM_IRQHandler
-                0x000000000800569c      0x19a CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-                0x000000000800569c                HAL_TIM_IRQHandler
- *fill*         0x0000000008005836        0x2 
+                0x0000000008005670      0x19a CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x0000000008005670                HAL_TIM_IRQHandler
+ *fill*         0x000000000800580a        0x2 
  .text.TIM_Base_SetConfig
-                0x0000000008005838      0x104 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-                0x0000000008005838                TIM_Base_SetConfig
+                0x000000000800580c      0x104 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x000000000800580c                TIM_Base_SetConfig
  .text.HAL_TIM_Base_Init
-                0x000000000800593c       0x60 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-                0x000000000800593c                HAL_TIM_Base_Init
+                0x0000000008005910       0x60 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x0000000008005910                HAL_TIM_Base_Init
  .text.TIM_ETR_SetConfig
-                0x000000000800599c       0x18 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-                0x000000000800599c                TIM_ETR_SetConfig
+                0x0000000008005970       0x18 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x0000000008005970                TIM_ETR_SetConfig
  .text.HAL_TIM_ConfigClockSource
-                0x00000000080059b4      0x138 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-                0x00000000080059b4                HAL_TIM_ConfigClockSource
+                0x0000000008005988      0x138 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+                0x0000000008005988                HAL_TIM_ConfigClockSource
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x0000000008005aec       0xa0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
-                0x0000000008005aec                HAL_TIMEx_MasterConfigSynchronization
+                0x0000000008005ac0       0xa0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+                0x0000000008005ac0                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_CommutCallback
-                0x0000000008005b8c        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
-                0x0000000008005b8c                HAL_TIMEx_CommutCallback
+                0x0000000008005b60        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+                0x0000000008005b60                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x0000000008005b8e        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
-                0x0000000008005b8e                HAL_TIMEx_BreakCallback
+                0x0000000008005b62        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+                0x0000000008005b62                HAL_TIMEx_BreakCallback
  .text.HAL_TIMEx_Break2Callback
-                0x0000000008005b90        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
-                0x0000000008005b90                HAL_TIMEx_Break2Callback
- *fill*         0x0000000008005b92        0x2 
+                0x0000000008005b64        0x2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+                0x0000000008005b64                HAL_TIMEx_Break2Callback
+ *fill*         0x0000000008005b66        0x2 
  .text.__libc_init_array
-                0x0000000008005b94       0x48 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-init.o)
-                0x0000000008005b94                __libc_init_array
- .text.memset   0x0000000008005bdc       0xa4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-memset.o)
-                0x0000000008005bdc                memset
+                0x0000000008005b68       0x48 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-init.o)
+                0x0000000008005b68                __libc_init_array
+ .text.memset   0x0000000008005bb0       0xa4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-memset.o)
+                0x0000000008005bb0                memset
  .text.startup.register_fini
-                0x0000000008005c80       0x14 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x0000000008005c94        0xc /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-atexit.o)
-                0x0000000008005c94                atexit
+                0x0000000008005c54       0x14 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x0000000008005c68        0xc /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-atexit.o)
+                0x0000000008005c68                atexit
  .text.__libc_fini_array
-                0x0000000008005ca0       0x2c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-fini.o)
-                0x0000000008005ca0                __libc_fini_array
+                0x0000000008005c74       0x2c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-fini.o)
+                0x0000000008005c74                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x0000000008005ccc        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-lock.o)
-                0x0000000008005ccc                __retarget_lock_acquire_recursive
+                0x0000000008005ca0        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-lock.o)
+                0x0000000008005ca0                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0000000008005cd0        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-lock.o)
-                0x0000000008005cd0                __retarget_lock_release_recursive
+                0x0000000008005ca4        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-lock.o)
+                0x0000000008005ca4                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x0000000008005cd4       0x8c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-__atexit.o)
-                0x0000000008005cd4                __register_exitproc
- .text.cos      0x0000000008005d60       0xa0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_cos.o)
-                0x0000000008005d60                cos
- .text.sin      0x0000000008005e00       0xb0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_sin.o)
-                0x0000000008005e00                sin
+                0x0000000008005ca8       0x8c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-__atexit.o)
+                0x0000000008005ca8                __register_exitproc
+ .text.cos      0x0000000008005d34       0xa0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_cos.o)
+                0x0000000008005d34                cos
+ .text.sin      0x0000000008005dd4       0xb0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_sin.o)
+                0x0000000008005dd4                sin
+ *fill*         0x0000000008005e84        0x4 
  .text.__ieee754_rem_pio2
-                0x0000000008005eb0      0x454 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-e_rem_pio2.o)
-                0x0000000008005eb0                __ieee754_rem_pio2
- *fill*         0x0000000008006304        0x4 
+                0x0000000008005e88      0x454 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-e_rem_pio2.o)
+                0x0000000008005e88                __ieee754_rem_pio2
+ *fill*         0x00000000080062dc        0x4 
  .text.__kernel_cos
-                0x0000000008006308      0x260 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-k_cos.o)
-                0x0000000008006308                __kernel_cos
+                0x00000000080062e0      0x260 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-k_cos.o)
+                0x00000000080062e0                __kernel_cos
  .text.__kernel_rem_pio2
-                0x0000000008006568      0x850 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-k_rem_pio2.o)
-                0x0000000008006568                __kernel_rem_pio2
+                0x0000000008006540      0x850 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-k_rem_pio2.o)
+                0x0000000008006540                __kernel_rem_pio2
  .text.__kernel_sin
-                0x0000000008006db8      0x184 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-k_sin.o)
-                0x0000000008006db8                __kernel_sin
- .text.fabs     0x0000000008006f3c        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_fabs.o)
-                0x0000000008006f3c                fabs
- *fill*         0x0000000008006f44        0x4 
- .text.floor    0x0000000008006f48       0xf8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_floor.o)
-                0x0000000008006f48                floor
- .text.scalbn   0x0000000008007040       0xf4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_scalbn.o)
-                0x0000000008007040                scalbn
+                0x0000000008006d90      0x184 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-k_sin.o)
+                0x0000000008006d90                __kernel_sin
+ .text.fabs     0x0000000008006f14        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_fabs.o)
+                0x0000000008006f14                fabs
+ *fill*         0x0000000008006f1c        0x4 
+ .text.floor    0x0000000008006f20       0xf8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_floor.o)
+                0x0000000008006f20                floor
+ .text.scalbn   0x0000000008007018       0xf4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_scalbn.o)
+                0x0000000008007018                scalbn
  *(.glue_7)
- .glue_7        0x0000000008007134        0x0 linker stubs
+ .glue_7        0x000000000800710c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008007134        0x0 linker stubs
+ .glue_7t       0x000000000800710c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008007134        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x000000000800710c        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x0000000008007134        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
-                0x0000000008007134                _init
- .init          0x0000000008007138        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x000000000800710c        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x000000000800710c                _init
+ .init          0x0000000008007110        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x0000000008007140        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
-                0x0000000008007140                _fini
- .fini          0x0000000008007144        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
-                0x000000000800714c                . = ALIGN (0x4)
-                0x000000000800714c                _etext = .
+ .fini          0x0000000008007118        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x0000000008007118                _fini
+ .fini          0x000000000800711c        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+                0x0000000008007124                . = ALIGN (0x4)
+                0x0000000008007124                _etext = .
 
-.vfp11_veneer   0x000000000800714c        0x0
- .vfp11_veneer  0x000000000800714c        0x0 linker stubs
+.vfp11_veneer   0x0000000008007124        0x0
+ .vfp11_veneer  0x0000000008007124        0x0 linker stubs
 
-.v4_bx          0x000000000800714c        0x0
- .v4_bx         0x000000000800714c        0x0 linker stubs
+.v4_bx          0x0000000008007124        0x0
+ .v4_bx         0x0000000008007124        0x0 linker stubs
 
-.iplt           0x000000000800714c        0x0
- .iplt          0x000000000800714c        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x0000000008007124        0x0
+ .iplt          0x0000000008007124        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x0000000008007150    0x16448
-                0x0000000008007150                . = ALIGN (0x4)
+.rodata         0x0000000008007128    0x16448
+                0x0000000008007128                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
- .rodata.lg     0x0000000008007150    0x15f90 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/lgb-logo-rbgdata.c.obj
-                0x0000000008007150                lg
+ .rodata.lg     0x0000000008007128    0x15f90 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/lgb-logo-rbgdata.c.obj
+                0x0000000008007128                lg
  .rodata.font8x8
-                0x000000000801d0e0       0x68 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
-                0x000000000801d0e0                font8x8
+                0x000000000801d0b8       0x68 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
+                0x000000000801d0b8                font8x8
  .rodata.D1CorePrescTable
-                0x000000000801d148       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
-                0x000000000801d148                D1CorePrescTable
+                0x000000000801d120       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
+                0x000000000801d120                D1CorePrescTable
  .rodata.JPEG_ACCHROM_HuffTable
-                0x000000000801d158       0xb2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
- *fill*         0x000000000801d20a        0x2 
+                0x000000000801d130       0xb2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+ *fill*         0x000000000801d1e2        0x2 
  .rodata.JPEG_ACLUM_HuffTable
-                0x000000000801d20c       0xb2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
- *fill*         0x000000000801d2be        0x2 
+                0x000000000801d1e4       0xb2 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+ *fill*         0x000000000801d296        0x2 
  .rodata.JPEG_CHROM_QuantTable.0
-                0x000000000801d2c0       0x40 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x000000000801d298       0x40 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .rodata.JPEG_DCCHROM_HuffTable
-                0x000000000801d300       0x1c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x000000000801d2d8       0x1c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .rodata.JPEG_DCLUM_HuffTable
-                0x000000000801d31c       0x1c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x000000000801d2f4       0x1c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .rodata.JPEG_LUM_QuantTable.1
-                0x000000000801d338       0x40 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x000000000801d310       0x40 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .rodata.JPEG_ZIGZAG_ORDER
-                0x000000000801d378       0x40 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+                0x000000000801d350       0x40 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
  .rodata._global_impure_ptr
-                0x000000000801d3b8        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-impure.o)
-                0x000000000801d3b8                _global_impure_ptr
+                0x000000000801d390        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-impure.o)
+                0x000000000801d390                _global_impure_ptr
  .rodata.npio2_hw
-                0x000000000801d3bc       0x80 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-e_rem_pio2.o)
+                0x000000000801d394       0x80 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-e_rem_pio2.o)
  .rodata.two_over_pi
-                0x000000000801d43c      0x108 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-e_rem_pio2.o)
- *fill*         0x000000000801d544        0x4 
- .rodata.PIo2   0x000000000801d548       0x40 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-k_rem_pio2.o)
+                0x000000000801d414      0x108 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-e_rem_pio2.o)
+ *fill*         0x000000000801d51c        0x4 
+ .rodata.PIo2   0x000000000801d520       0x40 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-k_rem_pio2.o)
  .rodata.init_jk
-                0x000000000801d588       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-k_rem_pio2.o)
-                0x000000000801d598                . = ALIGN (0x4)
+                0x000000000801d560       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-k_rem_pio2.o)
+                0x000000000801d570                . = ALIGN (0x4)
 
-.rel.dyn        0x000000000801d598        0x0
- .rel.iplt      0x000000000801d598        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x000000000801d570        0x0
+ .rel.iplt      0x000000000801d570        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x000000000801d598        0x0
-                0x000000000801d598                __exidx_start = .
+.ARM            0x000000000801d570        0x0
+                0x000000000801d570                __exidx_start = .
  *(.ARM.exidx*)
-                0x000000000801d598                __exidx_end = .
+                0x000000000801d570                __exidx_end = .
 
-.preinit_array  0x000000000801d598        0x0
-                0x000000000801d598                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x000000000801d570        0x0
+                0x000000000801d570                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x000000000801d598                PROVIDE (__preinit_array_end = .)
+                0x000000000801d570                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x000000000801d598        0x8
-                0x000000000801d598                PROVIDE (__init_array_start = .)
+.init_array     0x000000000801d570        0x8
+                0x000000000801d570                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x000000000801d598        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-__call_atexit.o)
+                0x000000000801d570        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x000000000801d59c        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x000000000801d5a0                PROVIDE (__init_array_end = .)
+ .init_array    0x000000000801d574        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x000000000801d578                PROVIDE (__init_array_end = .)
 
-.fini_array     0x000000000801d5a0        0x4
-                0x000000000801d5a0                PROVIDE (__fini_array_start = .)
+.fini_array     0x000000000801d578        0x4
+                0x000000000801d578                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000801d5a0        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x000000000801d5a4                PROVIDE (__fini_array_end = .)
-                0x000000000801d5a4                _sidata = LOADADDR (.data)
+ .fini_array    0x000000000801d578        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x000000000801d57c                PROVIDE (__fini_array_end = .)
+                0x000000000801d57c                _sidata = LOADADDR (.data)
 
-.data           0x0000000024000000      0x44c load address 0x000000000801d5a4
+.data           0x0000000024000000      0x44c load address 0x000000000801d57c
                 0x0000000024000000                . = ALIGN (0x4)
                 0x0000000024000000                _sdata = .
  *(.data)
@@ -2636,11 +2636,11 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                 0x000000002400044c                . = ALIGN (0x4)
                 0x000000002400044c                _edata = .
 
-.igot.plt       0x000000002400044c        0x0 load address 0x000000000801d9f0
+.igot.plt       0x000000002400044c        0x0 load address 0x000000000801d9c8
  .igot.plt      0x000000002400044c        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
                 0x000000002400044c                . = ALIGN (0x4)
 
-.bss            0x000000002400044c    0xfe214 load address 0x000000000801d9f0
+.bss            0x000000002400044c    0xfdf44 load address 0x000000000801d9c8
                 0x000000002400044c                _sbss = .
                 0x000000002400044c                __bss_start__ = _sbss
  *(.bss)
@@ -2662,35 +2662,33 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                 0x00000000240fdd0c                fps
  .bss.hue       0x00000000240fdd10        0x4 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
                 0x00000000240fdd10                hue
- .bss.hueLUT    0x00000000240fdd14      0x2d0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
-                0x00000000240fdd14                hueLUT
- .bss.sineLUT   0x00000000240fdfe4      0x5a0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
-                0x00000000240fdfe4                sineLUT
- .bss.hspi4     0x00000000240fe584       0x88 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
-                0x00000000240fe584                hspi4
- .bss.htim2     0x00000000240fe60c       0x4c CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
-                0x00000000240fe60c                htim2
- .bss.uwTick    0x00000000240fe658        0x4 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x00000000240fe658                uwTick
+ .bss.sineLUT   0x00000000240fdd14      0x5a0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
+                0x00000000240fdd14                sineLUT
+ .bss.hspi4     0x00000000240fe2b4       0x88 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
+                0x00000000240fe2b4                hspi4
+ .bss.htim2     0x00000000240fe33c       0x4c CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
+                0x00000000240fe33c                htim2
+ .bss.uwTick    0x00000000240fe388        0x4 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x00000000240fe388                uwTick
  .bss.__lock___atexit_recursive_mutex
-                0x00000000240fe65c        0x1 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-lock.o)
-                0x00000000240fe65c                __lock___atexit_recursive_mutex
+                0x00000000240fe38c        0x1 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-lock.o)
+                0x00000000240fe38c                __lock___atexit_recursive_mutex
  *(COMMON)
-                0x00000000240fe660                . = ALIGN (0x4)
- *fill*         0x00000000240fe65d        0x3 
-                0x00000000240fe660                _ebss = .
-                0x00000000240fe660                __bss_end__ = _ebss
+                0x00000000240fe390                . = ALIGN (0x4)
+ *fill*         0x00000000240fe38d        0x3 
+                0x00000000240fe390                _ebss = .
+                0x00000000240fe390                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x00000000240fe660      0x600 load address 0x000000000801d9f0
-                0x00000000240fe660                . = ALIGN (0x8)
+                0x00000000240fe390      0x600 load address 0x000000000801d9c8
+                0x00000000240fe390                . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
-                0x00000000240fe660                PROVIDE (_end = .)
-                0x00000000240fe860                . = (. + _Min_Heap_Size)
- *fill*         0x00000000240fe660      0x200 
-                0x00000000240fec60                . = (. + _Min_Stack_Size)
- *fill*         0x00000000240fe860      0x400 
-                0x00000000240fec60                . = ALIGN (0x8)
+                0x00000000240fe390                PROVIDE (_end = .)
+                0x00000000240fe590                . = (. + _Min_Heap_Size)
+ *fill*         0x00000000240fe390      0x200 
+                0x00000000240fe990                . = (. + _Min_Stack_Size)
+ *fill*         0x00000000240fe590      0x400 
+                0x00000000240fe990                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -2792,30 +2790,30 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
 LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a
 LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a
 
-.debug_info     0x0000000000000000    0x1e497
+.debug_info     0x0000000000000000    0x1e462
  .debug_info    0x0000000000000000      0x74e CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/gpio.c.obj
  .debug_info    0x000000000000074e     0x1162 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/jpeg.c.obj
  .debug_info    0x00000000000018b0      0x111 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/lgb-logo-rbgdata.c.obj
  .debug_info    0x00000000000019c1     0x152d CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/ltdc.c.obj
- .debug_info    0x0000000000002eee     0x2fb8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
- .debug_info    0x0000000000005ea6     0x113e CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
- .debug_info    0x0000000000006fe4      0x4c8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
- .debug_info    0x00000000000074ac     0x1460 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
- .debug_info    0x000000000000890c      0xa78 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
- .debug_info    0x0000000000009384     0x1168 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
- .debug_info    0x000000000000a4ec       0x22 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
- .debug_info    0x000000000000a50e     0x154c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_info    0x000000000000ba5a     0x13de CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_info    0x000000000000ce38      0xc25 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_info    0x000000000000da5d     0x26d4 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
- .debug_info    0x0000000000010131     0x155d CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
- .debug_info    0x000000000001168e      0xec5 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
- .debug_info    0x0000000000012553     0x1132 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
- .debug_info    0x0000000000013685     0x13bc CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_info    0x0000000000014a41     0x1ecb CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
- .debug_info    0x000000000001690c     0x1c3c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
- .debug_info    0x0000000000018548     0x3fcf CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
- .debug_info    0x000000000001c517     0x1f80 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+ .debug_info    0x0000000000002eee     0x2f83 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x0000000000005e71     0x113e CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
+ .debug_info    0x0000000000006faf      0x4c8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_info    0x0000000000007477     0x1460 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_info    0x00000000000088d7      0xa78 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
+ .debug_info    0x000000000000934f     0x1168 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
+ .debug_info    0x000000000000a4b7       0x22 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
+ .debug_info    0x000000000000a4d9     0x154c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_info    0x000000000000ba25     0x13de CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_info    0x000000000000ce03      0xc25 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_info    0x000000000000da28     0x26d4 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+ .debug_info    0x00000000000100fc     0x155d CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+ .debug_info    0x0000000000011659      0xec5 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
+ .debug_info    0x000000000001251e     0x1132 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+ .debug_info    0x0000000000013650     0x13bc CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_info    0x0000000000014a0c     0x1ecb CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_info    0x00000000000168d7     0x1c3c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+ .debug_info    0x0000000000018513     0x3fcf CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+ .debug_info    0x000000000001c4e2     0x1f80 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
 
 .debug_abbrev   0x0000000000000000     0x3035
  .debug_abbrev  0x0000000000000000      0x192 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/gpio.c.obj
@@ -2890,56 +2888,56 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  .debug_aranges
                 0x00000000000011a0      0x198 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
 
-.debug_ranges   0x0000000000000000     0x1408
+.debug_ranges   0x0000000000000000     0x1400
  .debug_ranges  0x0000000000000000       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/gpio.c.obj
  .debug_ranges  0x0000000000000010       0x20 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/jpeg.c.obj
  .debug_ranges  0x0000000000000030       0x20 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/ltdc.c.obj
- .debug_ranges  0x0000000000000050      0x1b8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
- .debug_ranges  0x0000000000000208       0x20 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
- .debug_ranges  0x0000000000000228       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
- .debug_ranges  0x0000000000000238       0x70 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
- .debug_ranges  0x00000000000002a8       0x18 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
- .debug_ranges  0x00000000000002c0       0x20 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
- .debug_ranges  0x00000000000002e0       0x20 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
- .debug_ranges  0x0000000000000300      0x190 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_ranges  0x0000000000000490      0x100 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_ranges  0x0000000000000590       0x48 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_ranges  0x00000000000005d8      0x1b0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
- .debug_ranges  0x0000000000000788      0x148 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
- .debug_ranges  0x00000000000008d0       0xb0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
- .debug_ranges  0x0000000000000980      0x1d8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
- .debug_ranges  0x0000000000000b58       0xe8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_ranges  0x0000000000000c40       0xe0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
- .debug_ranges  0x0000000000000d20      0x190 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
- .debug_ranges  0x0000000000000eb0      0x3d0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
- .debug_ranges  0x0000000000001280      0x188 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+ .debug_ranges  0x0000000000000050      0x1b0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
+ .debug_ranges  0x0000000000000200       0x20 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
+ .debug_ranges  0x0000000000000220       0x10 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_ranges  0x0000000000000230       0x70 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_ranges  0x00000000000002a0       0x18 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
+ .debug_ranges  0x00000000000002b8       0x20 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
+ .debug_ranges  0x00000000000002d8       0x20 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
+ .debug_ranges  0x00000000000002f8      0x190 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_ranges  0x0000000000000488      0x100 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_ranges  0x0000000000000588       0x48 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_ranges  0x00000000000005d0      0x1b0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+ .debug_ranges  0x0000000000000780      0x148 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+ .debug_ranges  0x00000000000008c8       0xb0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
+ .debug_ranges  0x0000000000000978      0x1d8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+ .debug_ranges  0x0000000000000b50       0xe8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_ranges  0x0000000000000c38       0xe0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_ranges  0x0000000000000d18      0x190 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+ .debug_ranges  0x0000000000000ea8      0x3d0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+ .debug_ranges  0x0000000000001278      0x188 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
 
-.debug_line     0x0000000000000000    0x17ab4
+.debug_line     0x0000000000000000    0x17a89
  .debug_line    0x0000000000000000      0x270 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/gpio.c.obj
  .debug_line    0x0000000000000270      0x30b CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/jpeg.c.obj
  .debug_line    0x000000000000057b      0x11b CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/lgb-logo-rbgdata.c.obj
  .debug_line    0x0000000000000696      0x6e7 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/ltdc.c.obj
- .debug_line    0x0000000000000d7d     0x1249 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
- .debug_line    0x0000000000001fc6      0x439 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
- .debug_line    0x00000000000023ff      0x1af CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
- .debug_line    0x00000000000025ae      0x3e7 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
- .debug_line    0x0000000000002995      0x44d CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
- .debug_line    0x0000000000002de2      0x388 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
- .debug_line    0x000000000000316a       0xb0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
- .debug_line    0x000000000000321a      0x975 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_line    0x0000000000003b8f      0x837 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_line    0x00000000000043c6      0x738 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_line    0x0000000000004afe     0x2cd4 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
- .debug_line    0x00000000000077d2     0x19ac CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
- .debug_line    0x000000000000917e     0x1501 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
- .debug_line    0x000000000000a67f      0xb63 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
- .debug_line    0x000000000000b1e2     0x1281 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_line    0x000000000000c463     0x1c8d CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
- .debug_line    0x000000000000e0f0     0x281d CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
- .debug_line    0x000000000001090d     0x50a3 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
- .debug_line    0x00000000000159b0     0x2104 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+ .debug_line    0x0000000000000d7d     0x121e CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x0000000000001f9b      0x439 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
+ .debug_line    0x00000000000023d4      0x1af CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_line    0x0000000000002583      0x3e7 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_line    0x000000000000296a      0x44d CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
+ .debug_line    0x0000000000002db7      0x388 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
+ .debug_line    0x000000000000313f       0xb0 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
+ .debug_line    0x00000000000031ef      0x975 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_line    0x0000000000003b64      0x837 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_line    0x000000000000439b      0x738 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_line    0x0000000000004ad3     0x2cd4 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+ .debug_line    0x00000000000077a7     0x19ac CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+ .debug_line    0x0000000000009153     0x1501 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
+ .debug_line    0x000000000000a654      0xb63 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+ .debug_line    0x000000000000b1b7     0x1281 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_line    0x000000000000c438     0x1c8d CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_line    0x000000000000e0c5     0x281d CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+ .debug_line    0x00000000000108e2     0x50a3 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+ .debug_line    0x0000000000015985     0x2104 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
 
-.debug_str      0x0000000000000000     0x757b
+.debug_str      0x0000000000000000     0x7574
  .debug_str     0x0000000000000000      0x4a7 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/gpio.c.obj
                                         0x508 (size before relaxing)
  .debug_str     0x00000000000004a7      0xe68 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/jpeg.c.obj
@@ -2948,43 +2946,43 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                                         0x1fb (size before relaxing)
  .debug_str     0x0000000000001373      0x627 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/ltdc.c.obj
                                        0x13e8 (size before relaxing)
- .debug_str     0x000000000000199a      0xdda CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
-                                       0x146a (size before relaxing)
- .debug_str     0x0000000000002774       0x73 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
+ .debug_str     0x000000000000199a      0xdd3 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
+                                       0x1463 (size before relaxing)
+ .debug_str     0x000000000000276d       0x73 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
                                         0xe9e (size before relaxing)
- .debug_str     0x00000000000027e7       0x54 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_str     0x00000000000027e0       0x54 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
                                         0x457 (size before relaxing)
- .debug_str     0x000000000000283b      0x13d CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_str     0x0000000000002834      0x13d CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/stm32h7xx_it.c.obj
                                        0x10fc (size before relaxing)
- .debug_str     0x0000000000002978      0x249 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
+ .debug_str     0x0000000000002971      0x249 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
                                         0x6a0 (size before relaxing)
- .debug_str     0x0000000000002bc1      0x179 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
+ .debug_str     0x0000000000002bba      0x179 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
                                        0x1444 (size before relaxing)
- .debug_str     0x0000000000002d3a       0x5e CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
+ .debug_str     0x0000000000002d33       0x5e CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Startup/startup_stm32h7b0vbtx.s.obj
                                          0x9b (size before relaxing)
- .debug_str     0x0000000000002d98      0x7d6 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_str     0x0000000000002d91      0x7d6 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
                                        0x14cf (size before relaxing)
- .debug_str     0x000000000000356e      0x44f CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_str     0x0000000000003567      0x44f CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
                                        0x1074 (size before relaxing)
- .debug_str     0x00000000000039bd      0x115 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_str     0x00000000000039b6      0x115 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
                                         0x706 (size before relaxing)
- .debug_str     0x0000000000003ad2      0x8b4 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+ .debug_str     0x0000000000003acb      0x8b4 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
                                        0x111f (size before relaxing)
- .debug_str     0x0000000000004386      0x4c3 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+ .debug_str     0x000000000000437f      0x4c3 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
                                         0xa06 (size before relaxing)
- .debug_str     0x0000000000004849      0x4b1 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
+ .debug_str     0x0000000000004842      0x4b1 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
                                         0xa71 (size before relaxing)
- .debug_str     0x0000000000004cfa      0x690 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+ .debug_str     0x0000000000004cf3      0x690 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
                                         0xb3f (size before relaxing)
- .debug_str     0x000000000000538a      0x1ba CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_str     0x0000000000005383      0x1ba CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
                                         0xad2 (size before relaxing)
- .debug_str     0x0000000000005544      0x5bb CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_str     0x000000000000553d      0x5bb CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
                                         0xf68 (size before relaxing)
- .debug_str     0x0000000000005aff      0x569 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+ .debug_str     0x0000000000005af8      0x569 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
                                         0xdf5 (size before relaxing)
- .debug_str     0x0000000000006068      0xe7c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+ .debug_str     0x0000000000006061      0xe7c CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
                                        0x1867 (size before relaxing)
- .debug_str     0x0000000000006ee4      0x697 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+ .debug_str     0x0000000000006edd      0x697 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
                                        0x11e8 (size before relaxing)
 
 .comment        0x0000000000000000       0x49
@@ -3051,22 +3049,22 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  .debug_frame   0x00000000000036ec       0xb0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-lock.o)
  .debug_frame   0x000000000000379c       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-__atexit.o)
 
-.debug_loc      0x0000000000000000    0x134ad
+.debug_loc      0x0000000000000000    0x134ba
  .debug_loc     0x0000000000000000       0x67 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/jpeg.c.obj
  .debug_loc     0x0000000000000067       0x9e CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/ltdc.c.obj
- .debug_loc     0x0000000000000105      0xbe8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
- .debug_loc     0x0000000000000ced       0x64 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
- .debug_loc     0x0000000000000d51      0x21e CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
- .debug_loc     0x0000000000000f6f       0x67 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
- .debug_loc     0x0000000000000fd6      0x3b8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_loc     0x000000000000138e      0x726 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_loc     0x0000000000001ab4      0x3c6 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_loc     0x0000000000001e7a     0x2a3f CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
- .debug_loc     0x00000000000048b9     0x181e CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
- .debug_loc     0x00000000000060d7     0x11a3 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
- .debug_loc     0x000000000000727a      0x41b CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
- .debug_loc     0x0000000000007695      0x933 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_loc     0x0000000000007fc8     0x1a09 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
- .debug_loc     0x00000000000099d1     0x1dd7 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
- .debug_loc     0x000000000000b7a8     0x567b CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
- .debug_loc     0x0000000000010e23     0x268a CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+ .debug_loc     0x0000000000000105      0xbf5 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/main.c.obj
+ .debug_loc     0x0000000000000cfa       0x64 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/spi.c.obj
+ .debug_loc     0x0000000000000d5e      0x21e CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/system_stm32h7xx.c.obj
+ .debug_loc     0x0000000000000f7c       0x67 CMakeFiles/lg-h7b0-ltdc.elf.dir/Core/Src/tim.c.obj
+ .debug_loc     0x0000000000000fe3      0x3b8 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_loc     0x000000000000139b      0x726 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_loc     0x0000000000001ac1      0x3c6 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_loc     0x0000000000001e87     0x2a3f CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+ .debug_loc     0x00000000000048c6     0x181e CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+ .debug_loc     0x00000000000060e4     0x11a3 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
+ .debug_loc     0x0000000000007287      0x41b CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+ .debug_loc     0x00000000000076a2      0x933 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_loc     0x0000000000007fd5     0x1a09 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_loc     0x00000000000099de     0x1dd7 CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+ .debug_loc     0x000000000000b7b5     0x567b CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+ .debug_loc     0x0000000000010e30     0x268a CMakeFiles/lg-h7b0-ltdc.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj

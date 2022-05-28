@@ -6,10 +6,10 @@ display "daikin pichonkun"(ダイキン　ぴちょんくん💧) image and a ro
 the "pichonkun" image is defined in `Core/Src/lgb-logo-rbgdata.h`![](demo3.png)<br/>
 
 ## improvements
-220527:<br/>
-1. changed LTDC freq to 42MHz to get stability and performance.
+220528:<br/>
+1. changed LTDC freq to 29MHz to get stability.
 2. changed buffer type to from ARGB888 to RGB888, making display almost in full screen(480*720) within internal sram (cost 99.5%).
-3. imporved demo algos by creating hue, sine, cosine LUT to improve performance. now rotating circle is bigger and fps promoted. full-screen color shifting also can up to 60fps.
+3. imporved demo algos by creating sine and cosine LUT to improve performance. now rotating circle is bigger and fps promoted.
 
 ## LG LD050WV1 screen configuration (lighting up) in brief
 ### steps
@@ -52,6 +52,7 @@ set manually in `Core/Src/ltdc.c`:<br/>
 code have to be modified manually every time after cubemx generate code.
 
 6. LTDC Overclock is viable, the fastest LTDC clock tested is 54.6 MHz, while specification says 36MHz max. under this freq, touching the wiring may cause screen temporarily stop working (color over saturation, sudden black, image sync problem, etc) because of the electromagnetic interference.
+7. providing higher voltage to module (3.1v measured at stm32 VCC and going directly to LCM without resistor) is also viable, which can improve screen color sensory performance: saturation promoted(however this screen color gamut have only 49% NTSC). since ABS(absolute max ratings) in spec says LCM VCC 4.5v max, it's a bit confusing why LCM VCC(Typical) is 2.9v and Max is 3.0v.
 
 this configuration have been tested on two pieces of LD050WV1-SP01 screen produced in 2011 and configurations above are valid.<br/>
 

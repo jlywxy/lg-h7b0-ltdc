@@ -366,7 +366,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim){
     printFPS(fps);
     fps=0;
 }
-uint32_t hueLUT[180]={};
+//uint32_t hueLUT[720]={};
 float sineLUT[360]={};
 float cosineLUT[360]={};
 void draw() {
@@ -383,16 +383,15 @@ void draw() {
 
     hue += 1;
     if(hue>359)hue=0;
-    for (int i = 0; i < 360; i++) {
-        hue+=1;
+    for (int i = 0; i < 720; i++) {
+        hue+=0.5;
         if(hue>359)hue=0;
-        color=hueLUT[(int)hue/2];
-        volatile out=color&0xff;
-        for(int r=100;r<=200;r+=5) {
-            int x1 = cosineLUT[i] * r + centerX;
-            int y1 = sineLUT[i] * r + centerY;
-            for(int x=-3;x<3;x++){
-                for(int y=-3;y<3;y++) {
+        color=huecolor(hue);
+        for(int r=100;r<200;r+=4) {
+            int x1 = cosineLUT[i/2] * r + centerX;
+            int y1 = sineLUT[i/2] * r + centerY;
+            for(int x=-2;x<3;x++){
+                for(int y=-2;y<3;y++) {
                     pset24(x1+x, y1+y, color);
                 }
             }
@@ -413,7 +412,7 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
     for(int i=0;i<360;i++){
-        hueLUT[i/2]= huecolor((float)i);
+        //hueLUT[i]= huecolor((float)i);
         sineLUT[i]=sin(i*PI/180);
         cosineLUT[i]=cos(i*PI/180);
     }
